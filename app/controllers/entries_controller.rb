@@ -1,6 +1,5 @@
 class EntriesController < ApplicationController
-  before_action :set_entry, only: %i[ show edit update destroy ]
-
+  
   def new
   end
 
