@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @place %>
+
+<% @entries.each do |entry| %>
+  <h2><%= entry.title %></h2>
+  <p><%= entry.posted_on %></p>
+  <hr />
+<% end %>
+
+<div>
+  <a href="/entries/<%= @place.id %>/new">New Entry</a>
+</div>
+
+<br />
+<div>
+  <a href="/places">Back to places</a>
+</div>

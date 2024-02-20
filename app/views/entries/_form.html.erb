@@ -1,0 +1,22 @@
+
+
+<form action="/entries" method="post">
+  <div>
+    <label>Title</label>
+    <input type="text" name="title" />
+  </div>
+
+  <div>
+    <label>Description</label>
+    <textarea type="text" name="description" ></textarea>
+  </div>
+
+  <div>
+    <label>Posted On</label>
+    <input type="date" name="posted_on" />
+  </div>
+
+  <input type="hidden" name="place_id" value="<%= params["place_id"] %>">
+
+  <button type="submit">Submit</button>
+</form>
